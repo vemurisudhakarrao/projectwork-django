@@ -1,0 +1,37 @@
+{% load static %}
+<nav class="navbar navbar-expand-md navbar-light  bg-secondary">
+    <a href="{% url 'hm' %}" class="navbar-brand">
+     <img src="{% static 'images/brandfix.jpg' %}" alt="logo" style="width:40px;">
+     <span>BikeMart</span>
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav">
+            <a href="{% url 'hm' %}" class="nav-item nav-link active">Home</a>
+            <a href="{% url 'la' %}" class="nav-item nav-link active">LatestBikes</a>
+            <a href="{% url 'ab' %}" class="nav-item nav-link active">About</a>
+            {% if user.is_authenticated %}
+            <a href="{% url 'bn' %}" class="nav-item nav-link active">BookNow</a>
+            <div class="navbar-nav ml-auto" style="margin-right: 70px">
+            <a href="#" class="nav-item nav-link active">Cart</a>
+            <a href="{% url 'rg' %}" class="nav-item nav-link active ml-auto">Profile</a>
+            <a href="{% url 'lgg' %}" class="nav-item nav-link active ml-auto">Logout</a>
+
+            {% else %}
+            <a href="{% url 'rg' %}" class="nav-item nav-link active ml-auto">Register</a>
+            <a href="{% url 'lg' %}" class="nav-item nav-link active ml-auto">Login</a>
+            {% endif %}
+<!-- 
+            <form class="form-inline my-10 my-lg-8" style="margin-right: 100px">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+         -->
+    
+            </div> 
+        </div>
+    </div>
+</nav>

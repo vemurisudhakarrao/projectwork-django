@@ -1,0 +1,214 @@
+{% extends 'bmtl/home.html' %}
+{% block content %}
+{% load static%}
+
+<br />
+<br />
+ <div class="container">
+<div class="card-deck row">
+
+  <div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="card">
+    <div class="view overlay">
+      <img class="card-img-top" src="{% static 'images/tvs.jpg' %}" alt="Card image cap">
+      <a href="{% url 'tvs' %}">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title">TVS Motor</h4>
+      <p class="card-text">TVS Motor Company Limited is an Indian multinational motorcycle company headquartered at Chennai, India. It is the third largest motorcycle company in India with a revenue of over ₹20,000 crore in 2018–19.</p>
+      <button type="button" class="btn btn-light-blue btn-md"> <a href="{% url 'tvs' %}">Read more </a></button></div>
+  </div>
+  </div>
+
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="card mb-4">
+    <div class="view overlay">
+      <img class="card-img-top" src="{% static 'images/jawa.jpg' %}" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title">Jawa Moto</h4>
+      <p class="card-text">JAWA is a motorcycle and moped manufacturer founded in Prague, Czechoslovakia in 1929 by František Janeček, who bought the motorcycle division of Wanderer.</p>
+      <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="card mb-4">
+    <div class="view overlay">
+      <img class="card-img-top" src="{% static 'images/hero.jpg' %}" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">Hero Motocorp</h4>
+      <!--Text-->
+      <p class="card-text">Hero Motocorp Limited, formerly Hero Honda, is an Indian multinational motorcycle and scooter manufacturer based in New Delhi, India. The company is the largest two-wheeler manufacturer in the world, and also in India</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+    </div>
+
+  </div>
+  <!-- Card -->
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <!-- Card -->
+  <div class="card">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="{% static 'images/ktm1.jpg' %}" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">KTM</h4>
+      <!--Text-->
+      <p class="card-text">KTM AG is an Austrian motorcycle and sports car manufacturer owned by Pierer Mobility AG and Indian manufacturer Bajaj Auto. It was formed in 1992 but traces its foundation to as early as 1934. </p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+    </div>
+
+  </div>
+  <!-- Card -->
+</div>
+ 
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <!-- Card -->
+  <div class="card mb-4">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="{% static 'images/royal.jpg' %}" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">Royal Enfield</h4>
+      <!--Text-->
+      <p class="card-text">Royal Enfield is an Indian multinational motorcycle manufacturing company with the tag of "the oldest global motorcycle brand in continuous production" </p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+    </div>
+
+  </div>
+  <!-- Card -->
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">  
+  <!-- Card -->
+  <div class="card mb-4">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="{% static 'images/yamaha.jpg' %}" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">Yamaha Motor Company</h4>
+      <!--Text-->
+      <p class="card-text">Yamaha Motor Co., Ltd. is a Japanese manufacturer of motorcycles, marine products such as boats and outboard motors, and other motorized products.</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+    </div>
+
+  </div>
+  <!-- Card -->
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <!-- Card -->
+  <div class="card mb-4">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="{% static 'images/suzuki.jpg' %}" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">Suzuki Motors</h4>
+      <!--Text-->
+      <p class="card-text">Suzuki Motor Corporation is a Japanese multinational corporation headquartered in Minami-ku, Hamamatsu.</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+      </div>
+		</div>
+		</div>
+  <!-- Card -->
+
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="card">
+    <div class="view overlay">
+      <img class="card-img-top" src="{% static 'images/hero-electric.jpg' %}" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title">HERO Electric</h4>
+      <p class="card-text">Hero Motocorp Limited, formerly Hero Honda, is an Indian multinational motorcycle.The company is the largest two-wheeler manufacturer</p>
+      <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+  </div>
+  </div>
+  </div>  
+
+  <div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="card">
+    <div class="view overlay">
+      <img class="card-img-top" src="{% static 'images/revolts.jpg' %}" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title">REVOLT MOTORS</h4>
+      <p class="card-text">Book Now India's 1st AI-enabled smart electric bike with next-gen computing & mobility solution from Revolt Motors.</p>
+      <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+  </div>
+  </div>
+  </div>  
+
+  
+</div>
+<!-- Card deck -->
+  
+</div>
+{% endblock %}

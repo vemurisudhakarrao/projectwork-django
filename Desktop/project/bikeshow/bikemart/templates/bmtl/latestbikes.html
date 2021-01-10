@@ -1,0 +1,57 @@
+{% extends 'bmtl/home.html' %}
+{% block content %}
+{% load static%}
+
+<nav class="bg-dark navbar-dark">
+  <div class="container">
+    <a href="{% url 'rg' %}" class="navbar-brand"><center> BIKES ARE NOW AT DISCOUNT PRICE 25% OFF </center></a>
+  </div>
+  </nav>
+   <section id="header" class="jumbotron text-center">
+   	  <img src="{% static 'images/ride.jpg' %}">
+     <h1 class="display-7"> GET BIKES AT LOW PRICE </h1>
+     <p class="lead">We are exciting to ride with you.</p>
+     <a href="{% url 'rg' %}" class="btn btn-primary">Join</a>
+</section>
+  
+<section id="gallery">
+  <div class="container">
+    <div class="row">
+    <div class="col-lg-4 mb-4">
+    <div class="card">
+      <img src="{% static 'images/mar1.jpg' %}" alt="" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">NDS ECO MOTORS Lio Plus</h5>
+        <p class="card-text">NDS ECO MOTORS Lio Plus price start at Rs. 1.23 Lakh (Ex-Showroom). NDS ECO MOTORS Lio Plus is offered in only one variant - STD.</p>
+       <a href="{% url 'rg' %}" class="btn btn-outline-success btn-sm">Read More</a>
+      </div>
+     </div>
+    </div>
+  <div class="col-lg-4 mb-4">
+  <div class="card">
+      <img src="{% static 'images/mar2.jpg' %}" alt="" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Kawasaki Z H2</h5>
+        <p class="card-text">Kawasaki has launched its flagship streetfighter, the supercharged Z H2, in India. It’s available only on made-to-order basis and customers are required to pay.</p>
+       <a href="{% url 'rg' %}" class="btn btn-outline-success btn-sm">Read More</a>
+       </div>
+      </div>
+    </div>
+    <div class="col-lg-4 mb-4">
+    <div class="card">
+      <img src="{% static 'images/mar3.jpg' %}" alt="" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Indian Springfield Dark Horse Price</h5>
+        <p class="card-text">Indian Springfield Dark Horse price start at Rs. 28.57 Lakh (Ex-Showroom). Indian Springfield Dark Horse is offered.</p>
+       <a href="{% url 'rg' %}" class="btn btn-outline-success btn-sm">Read More</a>
+      </div>
+     </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+{% endblock %}

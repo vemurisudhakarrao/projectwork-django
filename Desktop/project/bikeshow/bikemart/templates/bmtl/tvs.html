@@ -1,0 +1,58 @@
+{% extends 'bmtl/home.html' %}
+{% block content %}
+{% load static%}
+<div class="container mt-5">
+  <h2 class="text-center bg-danger">new bikes in honda</h2>
+  <button class="bg-warning my-2 border rounded"><a href="{% url 'tvs' %}" style="color: black"><-back</a></button>
+<div class="card-columns">
+  <div class="card">
+    <div class="card-body text-center">
+      <img src="{% static 'images/honda.jpg' %}">
+       <div class="card-text">
+      	<a href="#"><button class="bg-info px-2">Booknow</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body text-center">
+      <img src="{% static 'images/honda.jpg' %}" class="border rounded">
+      <div class="card-text">
+      	<button class="bg-info px-2">Booknow</button>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body text-center">
+      <img src="{% static 'images/honda.jpg' %}" class="border rounded">
+       <div class="card-text">
+      	<button class="bg-info px-2 mt-2">Booknow</button>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body text-center">
+      <img src="{% static 'images/honda.jpg' %}" class="border rounded">
+       <div class="card-text">
+      	<button class="bg-info px-2 mt-2">Booknow</button>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body text-center">
+      <img src="{% static 'images/honda.jpg' %}" class="border rounded">
+       <div class="card-text">
+      	<button class="bg-info px-2 mt-2">Booknow</button>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body text-center">
+      <img src="{% static 'images/honda6.jpg' %}" class="border rounded">
+       <div class="card-text">
+      	<button class="bg-info px-2 mt-4">Booknow</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}
